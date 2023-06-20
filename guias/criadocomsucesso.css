@@ -1,3 +1,4 @@
+
 .text-primary {
     color: #33FF00 !important;
 }
@@ -11,3 +12,6 @@
     background-color: #2D1169 !important;
 }
 
+.centralizar {
+    text-align: center;
+}
