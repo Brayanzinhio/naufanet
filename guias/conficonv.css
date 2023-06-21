@@ -1,0 +1,31 @@
+body {
+    background: #2D1169;
+}
+
+.text-primary {
+    color: #33FF00 !important;
+}
+
+.btn-primary {
+    background-color: white !important;
+    border: 2px solid #5600AB !important;
+    color: #5600AB !important;
+}
+
+.bg-dark {
+    background-color: #2D1169 !important;
+}
+
+.card {
+    width: 50%;
+    margin: auto;
+}
+
+.center-align {
+    display: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
