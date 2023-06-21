@@ -15,3 +15,9 @@
 .centralizar {
     text-align: center;
 }
+.center-align {
+    display: center;
+    align-items: center;
+    justify-content: center;
+
+  }
