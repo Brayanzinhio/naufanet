@@ -1,40 +1,57 @@
 .text-primary {
     color: #bd0003 !important;
-}
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     background-color: #bd0003 !important;
     border: 1px solid #7f0000 !important;
-}
-
-.bg-dark {
+  }
+  
+  .bg-dark {
     background-color: #7f0000 !important;
-}
-.text-purple {
+  }
+  
+  .text-purple {
     color: #ff6c3e;
   }
-
-  .centralizar {
-    padding: 1px; 
-  }
-  .footer-custom {
-    height: 250px; 
-    
-  }
+  
   .centralizar {
     text-align: center;
-}
-.custom-text {
-    font-size: 24px; 
-    font-weight: bold; 
   }
-  body{
+  
+  .footer-custom {
+    height: 250px;
+  }
+  
+  .custom-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  body {
     background: linear-gradient(to bottom, #7f0000, #ffa372);
   }
+  
   .rounded-div {
     display: inline-block;
     background-color: white;
     border-radius: 50px;
     padding: 10px 20px;
   }
-
+  
+  input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(130vh - 400px);
+  }
+  
