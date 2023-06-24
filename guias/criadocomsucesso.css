@@ -1,15 +1,15 @@
 
 .text-primary {
-    color: #33FF00 !important;
+    color: #bd0003 !important;
 }
 
 .btn-primary {
-    background-color: #33FF00 !important;
-    border: 1px solid #30c513 !important;
+    background-color: #bd0003 !important;
+    border: 1px solid #7f0000 !important;
 }
 
 .bg-dark {
-    background-color: #2D1169 !important;
+    background-color: #7f0000 !important;
 }
 
 .centralizar {
@@ -34,7 +34,7 @@
     color: black;
   }
   .text-purple {
-    color: purple;
+    color: #ff6c3e;
   }
 
   .footer-custom {
