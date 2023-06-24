@@ -36,7 +36,7 @@
 }
 
 main{
-    background-color: #800080;
+    background: linear-gradient(to bottom, #7f0000, #ffa372);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

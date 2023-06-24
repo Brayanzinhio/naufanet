@@ -1,15 +1,33 @@
 .text-primary {
-    color: #33FF00 !important;
+    color: #bd0003 !important;
 }
 
 .btn-primary {
-    background-color: #33FF00 !important;
-    border: 1px solid #30c513 !important;
+    background-color: #bd0003 !important;
+    border: 1px solid #7f0000 !important;
 }
 
 .bg-dark {
-    background-color: #2D1169 !important;
+    background-color: #7f0000 !important;
 }
+.text-purple {
+    color: #ff6c3e;
+  }
+
+  .centralizar {
+    padding: 1px; 
+  }
+  .footer-custom {
+    height: 250px; 
+    
+  }
+  .centralizar {
+    text-align: center;
+}
+.custom-text {
+    font-size: 24px; 
+    font-weight: bold; 
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
@@ -17,13 +35,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     
 
 }
 
 main{
-    background-color: #800080;
+    background: linear-gradient(to bottom, #7f0000, #ffa372);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
