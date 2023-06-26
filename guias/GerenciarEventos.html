@@ -2,15 +2,15 @@
 <html lang="pt-br">
 
 <head>
-  <title>Title</title>
+  <title>Gerenciador de Eventos</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="gerenciareventos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0181f8b5db.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- linkado bootstrap-->
+  <link href="gerenciareventos.css" rel="stylesheet"> <!--linkado no css da página-->
+  <script src="https://kit.fontawesome.com/0181f8b5db.js" crossorigin="anonymous"></script> <!--ñ sei tbm-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--para uso de icones-->
 
 
 </head>
@@ -25,6 +25,69 @@
         <div class="d-flex align-items-center justify-content-center flex-grow-1">
           <h4 class="mb-0 ms-3 text-center" style="color: purple;">
             <a href="#" style="color: #ff6c3e; text-decoration: none;">Gerenciador de Eventos</a>
+          </h4>   
+        </div>
+        <div>
+          <h4>
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="button_user">
+                  <span class="fa-stack fa-lg alinhar">
+                    <i class="fas fa-circle fa-stack-2x fa-fw custom-circle"></i>
+                    <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                  </span>
+                </span>
+              </button>
+              <ul class="dropdown-menu">
+                <div class="card mb-3 custom-card ">
+                  <div class="card-header bg-transparent textured-header">
+                    <div class="text-center">
+                      <i class="fas fa-user fa-3x pintar"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title ">Agendamentos</h5>
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators seta-color">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon seta-color" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon seta-color" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    </div>
+                    <div class="card-footer bg-transparent ">
+                    <div class="text-center">
+                      <button class="Btn"><!--Botão especial-->
+                        <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                        <div class="text">Logout</div>
+                      </button>                 
+                    </div>
+                  </div>
+                </div> 
+                
+              
+              </ul>
+            </div>
+            </div>
           </h4>
         </div>
       </div>
@@ -34,20 +97,92 @@
   
   <main>
     <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus placerat mi, nec efficitur lectus pharetra vel. Integer finibus laoreet purus, sed aliquam mi accumsan sed. Nullam vel quam vel velit auctor feugiat. Morbi efficitur ante id mi consectetur, eu facilisis ipsum gravida. Duis ultricies tellus et justo luctus lacinia. Aliquam eu vulputate felis. Sed ut interdum neque, vel venenatis neque. Vivamus ut vulputate elit. Donec auctor nisi a tellus commodo, et aliquam metus finibus. Suspendisse potenti. Nullam luctus, ipsum ut aliquam pulvinar, nisl odio eleifend urna, id dignissim enim tellus at justo.</p>
-      <p>Nunc ac est nec magna ultricies viverra. Curabitur at vestibulum massa, ut malesuada ex. Suspendisse potenti. Fusce a diam ac arcu semper pulvinar a ac felis. Pellentesque interdum urna id sem tincidunt tempus. In sed tellus eleifend, aliquam mi ut, iaculis metus. Maecenas congue neque in odio fringilla, id dapibus turpis consectetur. Phasellus volutpat semper enim non consequat. Nam sed lacinia dui. Suspendisse ac justo ac justo scelerisque rhoncus. Maecenas iaculis tortor nec turpis pulvinar, nec vulputate nisi euismod. Nullam lobortis nunc non libero tristique placerat. Praesent fringilla posuere eros, sed iaculis massa iaculis sit amet.</p>
-      
+     
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h3>Title</h3>
+          <button class="btn btn-primary">Button 1</button>
+          <br> <!-- Adicionado uma quebra de linha -->
+          <button class="btn btn-secondary">Button 2</button>
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>   
+      <script src="../guias/gerenciareventos.js"></script>
     </div>
+    <div class="content">
+    <div class="grid-container">
+      <div class="col-1">
+        <div class="evento">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">Evento Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Evento Title</h5>
+              <p class="card-text">Evento content goes here.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">Evento Footer</div>
+          </div>
+        </div>
+        
+        <div class="calendario">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">Calendario Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Calendario Title</h5>
+              <p class="card-text">Calendario content goes here.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">Calendario Footer</div>
+          </div>
+        </div>
+        
+        <div class="comentario">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">comentarioo Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">comentario Title</h5>
+              <p class="card-text"> comentariocontent goes here.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">comentario Footer</div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-2">
+        <div class="barra-de-controle">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">Barra de Controle Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Barra de Controle Title</h5>
+              <p class="card-text">Barra de Controle content goes here.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">Barra de Controle Footer</div>
+          </div>
+        </div>
+        
+        <div class="maps">
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header bg-transparent border-success">Maps Header</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Maps Title</h5>
+              <p class="card-text">Maps content goes here.</p>
+              <img src="image.jpg" alt="Map Image" class="map-image">
+            </div>
+            <div class="card-footer bg-transparent border-success">Maps Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+
+
+
   </main>
   <footer class="footer bg-dark text-light footer-custom">
     <div class="container">
