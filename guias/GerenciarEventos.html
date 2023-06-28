@@ -94,92 +94,67 @@
     </nav>
   </header>
   
-  
-  <main>
-    <div class="container">
-     
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <h3>Title</h3>
-          <button class="btn btn-primary">Button 1</button>
-          <br> <!-- Adicionado uma quebra de linha -->
-          <button class="btn btn-secondary">Button 2</button>
-          <p>Try scrolling the rest of the page to see this option in action.</p>
-        </div>
-      </div>   
-      <script src="../guias/gerenciareventos.js"></script>
-    </div>
-    <div class="content">
-    <div class="grid-container">
-      <div class="col-1">
-        <div class="evento">
-          <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header bg-transparent border-success">Evento Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">Evento Title</h5>
-              <p class="card-text">Evento content goes here.</p>
-            </div>
-            <div class="card-footer bg-transparent border-success">Evento Footer</div>
+  <!--Disposição dos cards-->
+  <main class="box">
+    <div class="container2">
+      <!--Card evento-->
+      <div class="">
+        <div class="card border-success mb-3 evento" >
+          <div class="card-header bg-transparent border-success header-evento"><h5>Evento</h5></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">card evento</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
-        
-        <div class="calendario">
-          <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header bg-transparent border-success">Calendario Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">Calendario Title</h5>
-              <p class="card-text">Calendario content goes here.</p>
-            </div>
-            <div class="card-footer bg-transparent border-success">Calendario Footer</div>
+        <!--Card Calendario-->
+        <div class="card border-success mb-3 calendario" >
+          <div class="card-header bg-transparent border-success header-calendario"><h5>Calendário</h5></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">card calendário</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
-        
-        <div class="comentario">
-          <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header bg-transparent border-success">comentarioo Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">comentario Title</h5>
-              <p class="card-text"> comentariocontent goes here.</p>
-            </div>
-            <div class="card-footer bg-transparent border-success">comentario Footer</div>
+        <!--Card comentario-->
+        <div class="card border-success mb-3 comentario" >
+          <div class="card-header bg-transparent border-success header-comentario"><h5>Comentário do Evento</h5></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">card comentário</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-          
+          <div class="card-footer bg-transparent border-success">Footer</div>
+        </div>
+        <!--Card controle de convidados-->
+        <div class="card border-success mb-3 controle" >
+          <div class="card-header bg-transparent border-success header-controle"><h5>Dados de Controle</h5></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">card controle</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-footer bg-transparent border-success">Footer</div>
+        </div>
+        <!--Card maps-->
+        <div class="card border-success mb-3 maps">
+          <div class="card-header bg-transparent border-success header-maps"><h5>Localização</h5></div>
+          <div class="card-body text-success">
+            <h5 class="card-title">card maps</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
       </div>
-      
-      <div class="col-2">
-        <div class="barra-de-controle">
-          <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header bg-transparent border-success">Barra de Controle Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">Barra de Controle Title</h5>
-              <p class="card-text">Barra de Controle content goes here.</p>
-            </div>
-            <div class="card-footer bg-transparent border-success">Barra de Controle Footer</div>
-          </div>
-        </div>
-        
-        <div class="maps">
-          <div class="card border-success mb-3" style="max-width: 18rem;">
-            <div class="card-header bg-transparent border-success">Maps Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">Maps Title</h5>
-              <p class="card-text">Maps content goes here.</p>
-              <img src="image.jpg" alt="Map Image" class="map-image">
-            </div>
-            <div class="card-footer bg-transparent border-success">Maps Footer</div>
-          </div>
-        </div>
-      </div>
+
     </div>
+
+    <div class="box-lateral">
+      <h5>Meus Eventos</h5>
+      <button type="button" class="btn btn-outline btn-lateral1">Novo+</button>
+      <button type="button" class="btn btn-primary btn-lateral2">Fest Verão</button>
+    </div>
+
+   
     
-    </div>
-    </div>
 
 
 
