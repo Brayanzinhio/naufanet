@@ -84,7 +84,7 @@ main{
 }
 
 .form-box p a{
-    color: #33FF00;
+    color: #7f0000;
     text-decoration: none;
 }
 
@@ -119,13 +119,13 @@ form .input-group input{
 }
 
 form .input-group input:focus{
-    border-color: #33FF00;
+    border-color: #7f0000;
 }
 
 form .input-group button{
     width: 100%;
     height: 47px;
-    background: #33FF00;
+    background: #7f0000;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -281,7 +281,7 @@ main{
 
 .form-box p a{
 
-    color: #33FF00;
+    color: #7f0000;
 
     text-decoration: none;
 
@@ -358,7 +358,7 @@ form .input-group input{
 
 form .input-group input:focus{
 
-    border-color: #33FF00;
+    border-color: #7f0000;
 
 }
 
@@ -371,7 +371,7 @@ form .input-group button{
 
     height: 47px;
 
-    background: #33FF00;
+    background:  #7f0000;
 
     border-radius: 20px;
 
