@@ -212,7 +212,7 @@
   align-items: center;
   }
   .container2{
-    transform: translate(15%);
+    transform: translate(25%);
     display: block;
     position: relative; 
     justify-content: center;
@@ -223,32 +223,110 @@
     
   }
 
+  /*Card Evento*/
   .evento{
     position: absolute;
     left: 50px;
     top: 50px;
     width: 280px;
-    height: 260px;
+    height: 280px;
+    padding-bottom: 40px;
   }
   .header-evento{
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #ff6c3e;
   }
 
+  .corpo-eventos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .carousel-Eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    /*border: red 2px solid;*/
+    transform: translate(-5%);
+  }
+  .custom-img1{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    transform: translate(29%);
+  }
+  .carousel-control-prev .custom-icon,
+  .carousel-control-next .custom-icon {
+  filter: invert(100%);
+}
+
+ /* Estilo da caixa de texto */
+  .movable {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    width: 250px;
+  }  
+  .movable2 {
+    position: absolute;
+    bottom: 16px;
+    left: 10px;
+    width: 250px;
+  }  
+  .movable3 {
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+    width: 250px;
+  }  
+.form-control {
+  height: 18px; 
+  border-radius: 3px; 
+  border: 1px solid #bd0003; 
+}
+.custom-icon{
+  font-size: 14px;
+  color: #bd0003;
+  transform: translate(10px);
+}
+
+
+  /*Card Calendario*/
   .calendario{
     position: absolute;
     left: 50px;
     width: 280px;
-    height: 257px;
-    top: 330px;
+    height: 237px;
+    top: 350px;
     }
   .header-calendario{
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #ff6c3e;
+  }
+  .body-calendario{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .espaco-img{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 170px;
+    border: 2px solid black;
+  }
+  .img-calender{
+    width: 100%;
+    height: 100%;
   }
 
+  /*Card Comentario*/
   .comentario{
     position: absolute;
     width: 280px;
@@ -262,6 +340,7 @@
     display: flex;
   }
 
+  /*Card de controle*/
   .controle{
     position: absolute;
     transform: translate();
@@ -276,6 +355,7 @@
     display: flex;
   }
 
+  /*Card Maps*/
   .maps{
     position: absolute;
     right: 0%;
