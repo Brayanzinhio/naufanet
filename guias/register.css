@@ -60,141 +60,6 @@ main{
     width: 930px;
 }
 
-
-<<<<<<< HEAD
-.form-box{
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.74);
-    backdrop-filter: blur(40px);
-    padding: 30px 40px;
-    width: 50%;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.form-box h2{
-    font-size: 30px;
-}
-
-.form-box p{
-    font-weight: bold;
-    color: #4f4d4d;
-}
-
-.form-box p a{
-    color: #7f0000;
-    text-decoration: none;
-}
-
-.form-box form{
-    margin: 20px 0;
-}
-
-form .input-group{
-    margin-bottom: 15px;
-}
-
-form .input-group label{
-    color: #3D3D3D;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-form .input-group input{
-
-    width: 100%;
-    height: 47px;
-    background-color: rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    outline: none;
-    border: 2px solid transparent;
-    padding: 15px;
-    font-size: 15px;
-    color: #616161;
-    transition: all 0.4s ease;
-
-}
-
-form .input-group input:focus{
-    border-color: #7f0000;
-}
-
-form .input-group button{
-    width: 100%;
-    height: 47px;
-    background: #7f0000;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-@media (max-width:930px) {
-
-    .img-box{
-        display: none;
-    }
-
-    .box{
-        width: 700px;
-    }
-
-    .form-box{
-        width: 100%;
-        border-radius: 20px;
-    }
-
-}
-
-@media (max-width:500px) {
-    .w50{
-        width: 100%;
-        padding: 0;
-    }
-
-}
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-
-
-
-*{
-
-    padding: 0;
-
-    margin: 0;
-
-    box-sizing: border-box;
-
-    font-family: 'Poppins', sans-serif;
-
-   
-
-
-
-
-}
-
-
-
-
-main{
-
-    background-color: #800080;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    background-size: cover;
-
-=======
 .form {
     display: flex;
     flex-direction: column;
@@ -223,188 +88,8 @@ main{
     border: 1.5px solid #ecedec;
     border-radius: 10px;
     height: 50px;
->>>>>>> 91c6fa169fb175737fce2a315514f71bb46a902b
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-
-    justify-content: center;
-
-    padding: 20px;
-
-    min-height: 100vh;
-
-}
-
-
-
-
-.w50{
-
-
-
-
-    width: 50%;
-
-    float: left;
-
-    padding-right: 15px;
-
-}
-
-
-
-
-.box{
-
-    display: flex;
-
-    width: 930px;
-
-}
-
-
-
-
-
-.form-box{
-
-    margin: auto;
-
-    background-color: rgba(255, 255, 255, 0.74);
-
-    backdrop-filter: blur(40px);
-
-    padding: 30px 40px;
-
-    width: 50%;
-
-    border-radius: 20px 20px 20px 20px;
-
-}
-
-
-
-
-.form-box h2{
-
-    font-size: 30px;
-
-}
-
-
-
-
-.form-box p{
-
-    font-weight: bold;
-
-    color: #4f4d4d;
-
-}
-
-
-
-
-.form-box p a{
-
-    color: #7f0000;
-
-    text-decoration: none;
-
-}
-
-
-
-
-.form-box form{
-
-    margin: 20px 0;
-
-}
-
-
-
-
-form .input-group{
-
-    margin-bottom: 15px;
-
-}
-
-
-
-
-form .input-group label{
-
-    color: #3D3D3D;
-
-    font-weight: bold;
-
-    display: block;
-
-    margin-bottom: 5px;
-
-}
-
-
-
-
-form .input-group input{
-
-
-
-
-    width: 100%;
-
-    height: 47px;
-
-    background-color: rgba(255, 255, 255, 0.32);
-
-    border-radius: 20px;
-
-    outline: none;
-
-    border: 2px solid transparent;
-
-    padding: 15px;
-
-    font-size: 15px;
-
-    color: #616161;
-
-    transition: all 0.4s ease;
-
-
-
-
-}
-
-
-
-
-form .input-group input:focus{
-
-    border-color: #7f0000;
-
-}
-
-
-
-
-form .input-group button{
-
-    width: 100%;
-
-    height: 47px;
-
-    background:  #7f0000;
-
-    border-radius: 20px;
-
-    outline: none;
-
-=======
     padding-left: 10px;
     transition: 0.2s ease-in-out;
   }
@@ -412,7 +97,6 @@ form .input-group button{
   .input {
     margin-left: 10px;
     border-radius: 10px;
->>>>>>> 91c6fa169fb175737fce2a315514f71bb46a902b
     border: none;
     width: 100%;
     height: 100%;
@@ -423,7 +107,7 @@ form .input-group button{
   }
   
   .inputForm:focus-within {
-    border: 1.5px solid #d53c21;
+    border: 1.5px solid #2d79f3;
   }
   
   .flex-row {
@@ -443,7 +127,7 @@ form .input-group button{
   .span {
     font-size: 14px;
     margin-left: 5px;
-    color: #da2222;
+    color: #2d79f3;
     font-weight: 500;
     cursor: pointer;
   }
@@ -485,6 +169,8 @@ form .input-group button{
   }
   
   .btn:hover {
-    border: 1px solid #ff0000;
+    border: 1px solid #2d79f3;
     ;
   }
+  
+      
