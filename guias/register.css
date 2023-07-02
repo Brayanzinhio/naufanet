@@ -60,7 +60,6 @@ main{
     width: 930px;
 }
 
-
 .form {
     display: flex;
     flex-direction: column;
@@ -108,7 +107,7 @@ main{
   }
   
   .inputForm:focus-within {
-    border: 1.5px solid #d53c21;
+    border: 1.5px solid #2d79f3;
   }
   
   .flex-row {
@@ -128,7 +127,7 @@ main{
   .span {
     font-size: 14px;
     margin-left: 5px;
-    color: #da2222;
+    color: #2d79f3;
     font-weight: 500;
     cursor: pointer;
   }
@@ -170,6 +169,8 @@ main{
   }
   
   .btn:hover {
-    border: 1px solid #ff0000;
+    border: 1px solid #2d79f3;
     ;
   }
+  
+      
