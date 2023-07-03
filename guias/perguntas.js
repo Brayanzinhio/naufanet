@@ -33,4 +33,3 @@ document.addEventListener('DOMContentLoaded', function () {
       notification.remove();
     }, 3000);
   }
-  
