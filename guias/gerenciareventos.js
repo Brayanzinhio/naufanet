@@ -1,6 +1,13 @@
-window.onload = function() {
-    // Código de inicialização do carousel aqui
-    var carouselElement = document.getElementById('CarouselEventos');
-    var carousel = new bootstrap.Carousel(carouselElement);
-  };
-  
+
+  //Comentário modal
+  const myModal = document.getElementById('myModal');
+  const myInput = document.getElementById('myInput');
+
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus();
+  });
+
+
+
+
+

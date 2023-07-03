@@ -1,3 +1,4 @@
+
 .text-primary {
     color: #bd0003 !important;
   }
@@ -102,7 +103,15 @@
     align-items: center;
   }
   .seta-color{
-    color:black
+    filter: invert(100%);
+  }
+  .carousel-item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(30%);
+    width: 30px;
+    height: 30px;
   }
   
   .card-footer {
@@ -148,6 +157,7 @@
   /* text */
   .text {
     position: absolute;
+    top: 4px;
     right: 0%;
     width: 0%;
     opacity: 0;
@@ -187,21 +197,61 @@
   /*Componente lateral*/
 
   .box-lateral{
-    border: 5px solid blue;
     width: 280px;
     height: 730px;
     transform: translate(-384%);
     background-color: white;
+    display: block;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+  }
+  .letra{
+    position: absolute;
+    top: 40px;
+    left: 73px;
+    
+  }
+  .letra::after {
+    content: ''; /* Necessário para o pseudo-elemento */
+    position: absolute;
+    bottom: -15px; 
+    left: -36px;
+    width: 200px;
+    height: 2px; 
+    background-color: #ff6c3e;
   }
   .btn-lateral1{
-    width: 50px;
-    height: 15px;
-    border-color: #7f0000;
+    position: absolute;
+    width: 115px;
+    top: 120px;
+    left: 73px;
+    background-color: #bd0003;
   }
-  .btn-lateral2{
-    width: 50px;
-    height: 15px;
-
+  .btn-secondary.btn-lateral1:hover{
+    background-color: black;
+  }
+  .btn-lateral2 {
+    position: relative;
+    width: 115px;
+    top: 190px;
+    left: 73px;
+  }
+  .btn-lateral2::before {
+    content: '';
+    position: absolute;
+    bottom: -1px; 
+    left: -22px ;
+    width: 160px;
+    height: 2px; 
+    background-color: #ff6c3e; 
+  }
+  .btn-outline-dark.btn-lateral2:hover{
+    background-color: #ffa372;
+    opacity: 50%;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   /*corpo*/
@@ -217,7 +267,6 @@
     position: relative; 
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
     width: 900px;
     height: 730px;
     
@@ -244,13 +293,12 @@
     align-items: center;
     display: flex;
   }
-  .carousel-Eventos{
+  .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 110px;
-    /*border: red 2px solid;*/
     transform: translate(-5%);
   }
   .custom-img1{
@@ -287,11 +335,19 @@
   height: 18px; 
   border-radius: 3px; 
   border: 1px solid #bd0003; 
+  color: #ff6c3e;
 }
 .custom-icon{
   font-size: 14px;
   color: #bd0003;
   transform: translate(10px);
+}
+.input-group.mb-3 input[type="text"] {
+  color: #ff6c3e;
+}
+.custom-input::placeholder {
+  color: #ffa372;
+  opacity: 50%; 
 }
 
 
@@ -302,7 +358,7 @@
     width: 280px;
     height: 237px;
     top: 350px;
-    }
+  }
   .header-calendario{
     justify-content: center;
     align-items: center;
@@ -317,33 +373,70 @@
   .espaco-img{
     display: block;
     position: relative;
-    width: 250px;
-    height: 170px;
-    border: 2px solid black;
-  }
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 175px;
+    overflow: hidden;
+    left: 0px;
+  } 
   .img-calender{
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 240px;
+    height: 175px;
+    transform: translate(-5px);
+    border: 2px solid #ff6c3e;
   }
 
   /*Card Comentario*/
   .comentario{
     position: absolute;
+    overflow: hidden;
     width: 280px;
     height: 100px;
     left: 50px;
     bottom: 0%;
+    padding-top: -20px;
   }
   .header-comentario{
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #ff6c3e;
+  }
+  .bory-comentario{
+   display: block;
+   position: relative;
+   top: -20px;
+  }
+  .box-btn-calender{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .edit-btn{
+    width: 115px;
+    background-color: #bd0003;
+  }
+  .btn-secondary.edit-btn:hover{
+    background-color: black;
+  }
+
+  .modal-content{
+   height: 500px; 
+  }
+  .edit-text{
+    height: 300px;
+    max-height: 300px;
   }
 
   /*Card de controle*/
   .controle{
     position: absolute;
-    transform: translate();
     right: 0%;
     top:50px;
     width: 500px;
@@ -353,6 +446,21 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #ff6c3e;
+  }
+  .tela-dados{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .box-dados{
+    height: 240px;
+    width: 480px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    display: block;
   }
 
   /*Card Maps*/
@@ -367,5 +475,30 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    color: #ff6c3e;
   }
-  
+  .body-maps{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: translateY(-5px);
+  }
+  .box-maps{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    width: 450px;
+    height: 250px;
+    transform: translateY(-5px);
+    border: 2px solid #ff6c3e;
+  }
+  .zoom{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    
+  }

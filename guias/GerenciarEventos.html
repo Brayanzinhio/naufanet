@@ -11,6 +11,8 @@
   <link href="gerenciareventos.css" rel="stylesheet"> <!--linkado no css da página-->
   <script src="https://kit.fontawesome.com/0181f8b5db.js" crossorigin="anonymous"></script> <!--ñ sei tbm-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--para uso de icones-->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 
 </head>
@@ -21,6 +23,7 @@
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <h4 class="display-6" style="font-weight: 700;"><span class="text-primary">Par</span><span class="text-orange">tie</span></h4>
+          <a href="index.html"></a>
         </a>
         <div class="d-flex align-items-center justify-content-center flex-grow-1">
           <h4 class="mb-0 ms-3 text-center" style="color: purple;">
@@ -29,17 +32,17 @@
         </div>
         <div>
           <h4>
-            <div class="dropdown">
-              <button class="btn btn-link dropdown-toggle btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="button_user">
+            <div id="toggleButton" class="dropdown">
+              <button  class="btn btn-link dropdown-toggle btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span  class="button_user">
                   <span class="fa-stack fa-lg alinhar">
                     <i class="fas fa-circle fa-stack-2x fa-fw custom-circle"></i>
                     <i class="fas fa-user fa-stack-1x fa-inverse"></i>
                   </span>
                 </span>
               </button>
-              <ul class="dropdown-menu">
-                <div class="card mb-3 custom-card ">
+              <ul dropdownMenu class="dropdown-menu">
+                <div class="card mb-3 custom-card" id="menuDrop">
                   <div class="card-header bg-transparent textured-header">
                     <div class="text-center">
                       <i class="fas fa-user fa-3x pintar"></i>
@@ -47,39 +50,40 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title ">Agendamentos</h5>
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                      <div class="carousel-indicators seta-color">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <div id="carousel1" class="carousel slide">
+                        <div class="carousel-indicators seta-color">
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <object data="/Imagens/card-carousel.html" class="custom-img1" type="text/html"></object>
+                          </div>
+                          <div class="carousel-item1">
+                            <img src="/Imagens/cloud.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                       </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#CarouselEventos" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      
-                      <button class="carousel-control-next" type="button" data-bs-target="#CarouselEventos" data-bs-slide="next">
-                        <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
                     </div>
                     <div class="card-footer bg-transparent ">
                     <div class="text-center">
                       <button class="Btn"><!--Botão especial-->
                         <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-                        <div class="text">Logout</div>
+                        <a href="index.html">
+                          <div class="text">Logout</div>
+                        </a>
                       </button>                 
                     </div>
                   </div>
@@ -102,96 +106,126 @@
       <div class="">
         <div class="card mb-3 evento " >
           <div class="card-header bg-transparent header-evento border-0"><h5>Evento</h5></div>
-          <div class="card-body text-success">
+          <div class="card-body">
             <div class="corpo-eventos">
-              <div id="CarouselEventos" class="carousel-Eventos">
+              <div id="CarouselEventos" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../Imagens/festverao.png" class="custom-img1 "  >
+                    <img src="../Imagens/festverao.png" class="custom-img1" alt="Imagem 1">
                   </div>
                   <div class="carousel-item">
-                    <img src="..." class="custom-img1">
+                    <object data="/Imagens/card-carousel.html" class="custom-img1" type="text/html"></object>
                   </div>
                   <div class="carousel-item">
-                    <img src="..." class="custom-img1">
+                    <img src="..." class="custom-img1" alt="Imagem 3">
                   </div>
                 </div>
-                <button class="carousel-control-prev custom-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev custom-prev disabled" type="button" data-bs-target="#CarouselEventos" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next custo-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next custom-next disabled" type="button" data-bs-target="#CarouselEventos" data-bs-slide="next">
                   <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              
               <script src="../guias/gerenciareventos.js"></script>
             </div>
           </div>
           <div class="card-footer bg-transparent border-0 ">
 
             <div class="input-group mb-3 movable">
-              <input type="text" class="form-control custom-input" placeholder="Nome do Evento" aria-label="Nome do Evento" aria-describedby="button-addon1">
+              <input type="text" class="form-control custom-input" placeholder="Nome do Evento" value="FEST VERÃO RENDENÇÃO" aria-label="Nome do Evento" aria-describedby="button-addon1">
               <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
             </div>
             
             <div class="input-group mb-3 movable2">
-              <input type="text" class="form-control custom-input" placeholder="Código do Evento" aria-label="Código do Evento" aria-describedby="button-addon2">
+              <input type="text" class="form-control custom-input" placeholder="Código do Evento" value="A57KJO" aria-label="Código do Evento" aria-describedby="button-addon2">
               <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
             </div>
             
             <div class="input-group mb-3 movable3">
-              <input type="text" class="form-control custom-input" placeholder="Link de Compartilhamento" aria-label="Link de Compartilhamento" aria-describedby="button-addon3">
+              <input type="text" class="form-control custom-input" placeholder="Link de Compartilhamento" value="https://partie.co/A57KJO" aria-label="Link de Compartilhamento" aria-describedby="button-addon3">
               <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
             </div>
             
           </div>
         </div>
         <!--Card Calendario-->
-        <div class="card border-success mb-3 calendario" >
-          <div class="card-header bg-transparent border-success header-calendario"><h5>Calendário</h5></div>
+        <div class="card mb-3 calendario" >
+          <div class="card-header bg-transparent border-0 header-calendario"><h5>Calendário</h5></div>
           <div class="body-calendario">
             <div class="espaco-img">
-              <img class="img-calender"  src="../Imagens/calendario julho.png">
+              <img class="img-calender"  src="/Imagens/julho-calender.png">
             </div>
           </div>
-          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
         <!--Card comentario-->
-        <div class="card border-success mb-3 comentario" >
-          <div class="card-header bg-transparent border-success header-comentario"><h5>Comentário do Evento</h5></div>
-          <div class="card-body text-success">
-            <h5 class="card-title">card comentário</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card mb-3 comentario" >
+          <div class="card-header bg-transparent header-comentario border-0"><h5>Descrição do Evento</h5></div>
+          <div class="card-body bory-comentario">
+            <div class="box-btn-calender">
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-secondary edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Comente  
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Descrição</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label"></label>
+                      <textarea class="form-control edit-text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary edit-btn" data-bs-dismiss="modal">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="/guias/gerenciareventos.js"></script>
+
           </div>
-          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
         <!--Card controle de convidados-->
-        <div class="card border-success mb-3 controle" >
-          <div class="card-header bg-transparent border-success header-controle"><h5>Dados de Controle</h5></div>
-          <div class="card-body text-success">
-            <h5 class="card-title">card controle</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card  mb-3  border-0 controle" >
+          <div class="card-header bg-transparent header-controle border-0"><h5>Dados de Controle</h5></div>
+          <div class="card-body tela-dados ">  
+            <div class="box-dados">
+              <object data="/guias/grafico-dados.html" width="500px" height="275px"></object>
+            </div>
           </div>
-          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
         <!--Card maps-->
-        <div class="card border-success mb-3 maps">
-          <div class="card-header bg-transparent border-success header-maps"><h5>Localização</h5></div>
-          <div class="card-body text-success">
-            <h5 class="card-title">card maps</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card border-0 mb-3 maps">
+          <div class="card-header bg-transparent border-0 header-maps"><h5>Localização</h5></div>
+          <div class="card-body body-maps">
+            <div class="box-maps">
+              <div class="zoom">
+                <img src="/Imagens/maps1.png">
+              </div>
+             </div>  
           </div>
-          <div class="card-footer bg-transparent border-success">Footer</div>
         </div>
       </div>
-
     </div>
     <!--Box lateral-->
     <div class="box-lateral">
-      <h5>Meus Eventos</h5>
-      <button type="button" class="btn btn-outline btn-lateral1">Novo+</button>
-      <button type="button" class="btn btn-primary btn-lateral2">Fest Verão</button>
+      <h5 class="letra">Meus Eventos</h5>
+      <a href="Criar_eventos.html">
+        <button type="button" class="btn btn-secondary btn-lateral1">Novo+</button>
+      </a>
+      <a href="GerenciarEventos.html">
+        <button type="button" class="btn btn-outline-dark btn-lateral2 border-0">Fest Verão</button>
+      </a>
     </div>
 
   </main>
