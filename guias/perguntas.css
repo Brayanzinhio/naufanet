@@ -31,3 +31,58 @@
   body {
     background: linear-gradient(to bottom, #7f0000, #ffa372);
   }
+  
+
+  .layout {
+    width: 600px;
+    margin: auto;
+  }
+  
+  .accordion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .accordion__question p {
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .accordion__answer p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background: white;
+    border-radius: 10px;
+  }
+  .accordion__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .accordion.active .accordion__answer {
+    max-height: 500px;
+  }
+  
+  
+   .notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #bd0003;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
