@@ -34,7 +34,7 @@ label {
     color: #ffff;
     height: auto;
     width: 230px;
-    margin-left: 35%;
+    text-align: center;
 }
 .box{
     box-sizing: content-box;
@@ -43,4 +43,9 @@ label {
 .lb{
     width: 100px;
     height: 100px;
+}
+@media screen and (max-width:765px) {
+    nav{
+        display: grid;
+    }
 }
