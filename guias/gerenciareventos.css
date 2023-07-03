@@ -262,6 +262,7 @@
   align-items: center;
   }
   .container2{
+    border: 2px solid black;
     transform: translate(25%);
     display: block;
     position: relative; 
@@ -375,7 +376,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 250px;
     height: 175px;
     overflow: hidden;
     left: 0px;
@@ -385,10 +386,17 @@
     align-items: center;
     display: flex;
     overflow: hidden;
-    width: 240px;
+    width: 250px;
     height: 175px;
     transform: translate(-5px);
     border: 2px solid #ff6c3e;
+  }
+  .DataIn {
+    white-space: nowrap;
+    padding-top: 10px;
+    border-color: #ff6c3e;
+    width: 250px;
+    
   }
 
   /*Card Comentario*/
@@ -432,6 +440,7 @@
   .edit-text{
     height: 300px;
     max-height: 300px;
+    color: black;
   }
 
   /*Card de controle*/

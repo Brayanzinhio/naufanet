@@ -61,10 +61,10 @@
                             <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <object data="/Imagens/card-carousel.html" class="custom-img1" type="text/html"></object>
+                            <img src="../Imagens/nuvem2.png" class="d-block w-100" alt="...">
                           </div>
-                          <div class="carousel-item1">
-                            <img src="/Imagens/cloud.png" class="d-block w-100" alt="...">
+                          <div class="carousel-item">
+                            <img src="/Imagens/nuvem2.png" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -114,10 +114,10 @@
                     <img src="../Imagens/festverao.png" class="custom-img1" alt="Imagem 1">
                   </div>
                   <div class="carousel-item">
-                    <object data="/Imagens/card-carousel.html" class="custom-img1" type="text/html"></object>
+                    <img src="../Imagens/nuvem2.png" class="custom-img1" alt="Imagem 2">
                   </div>
                   <div class="carousel-item">
-                    <img src="..." class="custom-img1" alt="Imagem 3">
+                    <img src="../Imagens/nuvem2.png" class="custom-img1" alt="Imagem 3">
                   </div>
                 </div>
                 <button class="carousel-control-prev custom-prev disabled" type="button" data-bs-target="#CarouselEventos" data-bs-slide="prev">
@@ -157,7 +157,14 @@
           <div class="card-header bg-transparent border-0 header-calendario"><h5>Calendário</h5></div>
           <div class="body-calendario">
             <div class="espaco-img">
-              <img class="img-calender"  src="/Imagens/julho-calender.png">
+              <div class="col-md-2"><!-- Data Incio-->
+                <label for="dti" class="DataIn">Data de Inicio</label>
+                <input type="datetime-local" class="DTI DataIn " id="meeting-time" name="dtin" value="2023-06-27 T16:20" min="2023-06-27 T16:20">
+              </div>
+              <div class="col-md-2"><!-- Data Incio-->
+                <label for="dti" class="DataIn">Data de Fim</label>
+                <input type="datetime-local" class="DTI DataIn" id="meeting-time" name="dtin" value="2023-06-27 T16:20" min="2023-06-27 T16:20">
+              </div>
             </div>
           </div>
         </div>
@@ -182,7 +189,11 @@
                   <div class="modal-body">
                     <div class="mb-3">
                       <label for="exampleFormControlTextarea1" class="form-label"></label>
-                      <textarea class="form-control edit-text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <textarea class="form-control edit-text" id="exampleFormControlTextarea1" rows="3" >
+          28 de março de 2013 - 28 de março de 2013 às 19:00 - 22:00
+Praia da Enseada - São Francisco do Sul
+Descrição do evento
+                      </textarea>
                     </div>
                   </div>
                   <div class="modal-footer">
