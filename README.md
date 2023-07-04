@@ -29,3 +29,10 @@ Claudinei Dias
 - [Clique aqui](link)
 - [Clique aqui](link)
 
+# ✏️ Links: 
+
+- [Uiverse.io](https://uiverse.io/)
+- [Form Control](https://getbootstrap.com/docs/5.3/forms/form-control/)
+- [docs html](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+- [Form Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+- [Validation](https://getbootstrap.com/docs/5.3/forms/validation/)
