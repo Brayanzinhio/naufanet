@@ -37,6 +37,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   /*Exclusivo da página*/
   /*Navbar*/
   /*Fazer o botão na navbar*/
@@ -262,7 +263,6 @@
   align-items: center;
   }
   .container2{
-    border: 2px solid black;
     transform: translate(25%);
     display: block;
     position: relative; 
@@ -510,4 +510,12 @@
     width: 150px;
     height: 100px;
     
+  }
+
+  @media only screen and (max-width: 995px) {
+    .box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }

@@ -38,7 +38,7 @@ label {
 }
 .box{
     box-sizing: content-box;
-    width: 100%;
+    width: auto;
 }
 .lb{
     width: 100px;
