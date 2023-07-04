@@ -40,6 +40,11 @@
 
   /*Exclusivo da página*/
   /*Navbar*/
+
+  .custom-pgt{
+    transform: translate(-10%);
+  }
+
   /*Fazer o botão na navbar*/
   .btn-icon-only.dropdown-toggle::after {
     display: none !important;
@@ -526,8 +531,7 @@
     }
     .container2{
       width: 760px;
-      height: 730px;
-      border: 5px solid black;   
+      height: 730px;  
     }
     .evento{
       left: 30px;
@@ -566,7 +570,7 @@
       width: 240px;
       height: 237px;
       top: 350px;
-      padding: 10px;
+      padding-left: 10px;
     }
     .DataIn {
       padding-top: 10px;
@@ -629,8 +633,7 @@
     }
     .container2{
       width: 630px;
-      height: 730px;
-      border: 5px solid black;   
+      height: 730px; 
     }
     .evento{
       left: 20px;
@@ -669,7 +672,7 @@
       width: 200px;
       height: 237px;
       top: 350px;
-      padding: 10px;
+      padding-left: 10px;
     }
     .DataIn {
       padding-top: 10px;
@@ -742,7 +745,6 @@
     .container2{
       width: 530px;
       height: 1066px;
-      border: 5px solid black;   
     }
     .evento{
       left: 30px;
@@ -781,7 +783,7 @@
       width: 200px;
       height: 280px;
       top: 50px;
-      padding: 10px;
+      padding-left: 10px;
     }
     .DataIn {
       padding-top: 10px;
@@ -834,9 +836,6 @@
     }
   }
   @media screen and (max-width: 516px){
-    .navbrand{
-      font-size: 10;
-    }
     .box-lateral{
       width: 130px;
       height: 1066px;
@@ -878,14 +877,12 @@
     .container2{
       width: 380px;
       height: 1066px;
-      border: 5px solid black;   
     }
     .evento{
-      left: 20px;
+      left: 11px;
       top: 50px;
       width: 165px;
       height: 265px;
-      padding-bottom: 40px;
     }
     .custom-img1{
       width: 70%;
@@ -913,11 +910,11 @@
       width: 135px;
     }  
     .calendario{
-      left: 203px;
+      left: 190px;
       width: 165px;
       height: 265px;
       top: 50px;
-      padding: 10px;
+      padding-left: 10px;
     }
     .DataIn {
       padding-top: 10px;
@@ -928,7 +925,7 @@
     .comentario{
       width: 348px;
       height: 100px;
-      left: 20px;
+      left: 11px;
       top: 348px;
       padding-top: -20px;
       text-align: center;
@@ -939,11 +936,10 @@
       top: -20px;
      }
     .controle{
-      right: 0%;
       top: 466px;
       width: 348px;
       height: 280px;
-      left: 20px;
+      left: 11px;
     }
     .box-dados{ 
       position: relative;
@@ -956,22 +952,16 @@
       bottom: -2px;
       width: 348px;
       height: 280px;
-      left: 20px;
+      left: 11px;
     }
     .box-maps{
       justify-content: center;
       align-items: center;
       display: flex;
       overflow: hidden;
-      width: 450px;
+      width: 328px;
       height: 200px;
       transform: translateY(-5px);
       border: 2px solid #ff6c3e;
     }
-
-    
   }
-  @media screen and (min-width: 320px){
-    
-  }
-
