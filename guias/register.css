@@ -152,7 +152,7 @@ main{
     margin: 5px 0;
   }
   
-  .btn {
+  /* .btn {
     margin-top: 10px;
     width: 100%;
     height: 50px;
@@ -166,7 +166,7 @@ main{
     background-color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-  }
+  } */
   
   .btn:hover {
     border: 1px solid #2d79f3;
