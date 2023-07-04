@@ -33,8 +33,8 @@ body {
 }
 
 .layout {
-  width: 600px;
-  margin: auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .accordion {
@@ -83,4 +83,8 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
+}
+
+.custom-space {
+  margin-bottom: 2000px;
 }
