@@ -28,29 +28,41 @@
   font-weight: bold;
 }
 
+.text-center{
+  color: #fff;
+  padding-top: 5px;
+}
+
 body {
   background: linear-gradient(to bottom, #7f0000, #ffa372);
 }
 
+
+
 .layout {
   max-width: 600px;
   margin: 0 auto;
+  min-height: 400px;
+  top: 50px;
+  display: block;
+  position: relative;
+  align-items: center;
+
 }
 
 .accordion {
-  padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .accordion__question p {
-  margin: 5px;
-  padding: 0;
+  top: 100px;
   font-family: Verdana;
   font-size: 20px;
   color: #000000;
+
 }
 
 .accordion__answer p {
@@ -60,7 +72,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .accordion__answer {
@@ -72,6 +84,19 @@ body {
 
 .accordion.active .accordion__answer {
   max-height: 500px;
+}
+
+.form-control{
+  width: 400px;
+}
+
+.btn-secondary.custom-btn{
+  width: 115px;
+  background-color: #bd0003;
+}
+
+.btn-secondary.custom-btn:hover{
+  background-color: #000000;
 }
 
 .notification {

@@ -50,3 +50,12 @@
   font-weight: 800;
   line-height: normal;
 }
+
+.btn-secondary.custom-btn{
+  width: 115px;
+  background-color: #bd0003;
+}
+
+.btn-secondary.custom-btn:hover{
+  background-color: black;
+}

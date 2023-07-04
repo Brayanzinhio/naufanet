@@ -14,7 +14,7 @@
     height: auto;
     margin-left: 45px;
     margin-top: 45px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: #ffff; 
 }
 label {
@@ -28,7 +28,7 @@ label {
 .dt{
     width: 150px;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .ce{
     color: #ffff;
@@ -44,6 +44,18 @@ label {
     width: 100px;
     height: 100px;
 }
+
+.btn-secondary.custom-btn{
+    width: 115px;
+    background-color: #bd0003;
+}
+.btn-secondary.custom-btn:hover{
+    background-color: black;
+}
+
+
+
+
 @media screen and (max-width:765px) {
     nav{
         display: grid;
